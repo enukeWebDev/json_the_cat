@@ -13,11 +13,10 @@ const fetchBreedDescription = (catsBreed, callbackFunc) => {
       } else {
         return callbackFunc(error, information[0].description);
       }
-
     } else {
       return callbackFunc(error, 'Opppsss...Try again!');
     }
   });
 };
 
-module.exports = { fetchBreedDecsription };
+module.exports = { fetchBreedDescription };
