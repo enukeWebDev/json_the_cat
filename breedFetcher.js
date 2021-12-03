@@ -1,6 +1,6 @@
 const request = require('request');
 
-const fetchCatBreedInformation = (catsBreed, callbackFunc) => {
+const fetchBreedDescription = (catsBreed, callbackFunc) => {
   request(`https://api.thecatapi.com/v1/breeds/search?q=${catsBreed}`, (error, message, body) => {
     //Perfect Case - no error
     if (!error) {
@@ -20,4 +20,4 @@ const fetchCatBreedInformation = (catsBreed, callbackFunc) => {
   });
 };
 
-module.exports = { fetchCatBreedInformation };
+module.exports = { fetchBreedDecsription };
